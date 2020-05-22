@@ -132,8 +132,8 @@ export default {
       for (let year = startYear; year < endYear; year += 1) {
         items.push({
           year,
-          label: year,
-          ariaLabel: year,
+          label: year + 543,
+          ariaLabel: year + 543,
           isActive: year === this.year,
           isCurrent: year === thisYear,
           isDisabled: !this.validator({ month: this.month, year }),
