@@ -146,10 +146,10 @@ export default {
       return this.monthMode ? this.monthItems : this.yearItems;
     },
     firstYear() {
-      return head(this.yearItems.map(i => i.year));
+      return head(this.yearItems.map(i => i.label));
     },
     lastYear() {
-      return last(this.yearItems.map(i => i.year));
+      return last(this.yearItems.map(i => i.label));
     },
   },
   watch: {
